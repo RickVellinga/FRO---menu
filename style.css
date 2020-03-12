@@ -1,0 +1,15 @@
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+.container img{
+  max-width: 100%;
+}
+
+.container h1, .container p{
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+}

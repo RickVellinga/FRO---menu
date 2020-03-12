@@ -1,0 +1,83 @@
+nav{
+  background-color: chocolate;
+  color: cornsilk;
+  position: fixed;
+  text-align: right;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: right .5s ease-in-out;
+}
+
+nav a{
+  color: cornsilk;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 1em 2em;
+  display: block;
+  border-bottom: 1px solid cornsilk;
+}
+
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a.actief{
+  padding: 1em 1.3em;
+  animation: nav 1s;
+  border-left: .7em solid cornsilk;
+  border-right: .7em solid cornsilk;
+}
+
+#menu-schuiver:checked ~ nav{
+  right: 90vw;
+  animation: nav 1s;
+}
+
+#menu-schuiver{
+  display: none;
+    animation: nav 1s;
+}
+
+label.haal-menu{
+  font-size: 2em;
+  float: right;
+  padding: .8rem 2rem;
+  display: block;
+  border-bottom: 2px solid cornsilk;
+}
+
+label.weg-menu{
+  font-size: 2em;
+  text-align: right;
+   padding: .8rem 2rem;
+  display: block;
+  border-bottom: 1px solid cornsilk;
+  text-align: left;
+}
+
+
+@-webkit-keyframes nav {
+  0% {
+    right: 0vw;
+
+  }
+}
+
+
+h1{
+  margin-left: 4em;
+}
+
+p{
+  margin-left: 8em;
+
+}
+
+@-moz-keyframes nav {
+  100% {
+    right: 90vw;
+  }
+}
